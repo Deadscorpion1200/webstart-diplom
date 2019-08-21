@@ -3426,6 +3426,7 @@ h1, h2, h3, h4, p, ul, li, hr {
 
 a {
   text-decoration: none;
+  color: none;
 }
 
 a:visited {
@@ -3506,5 +3507,58 @@ a:visited {
   color: #a49cc0;
   font-size: 18px;
   margin-right: 7px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brand__name {
+  font-size: 1.5em;
+}
+
+.brand__motto {
+  font-size: 15px;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation__item {
+  list-style: none;
+  margin-right: 35px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navigation__item:last-child {
+  margin-right: 0;
 }
 /*# sourceMappingURL=style.css.map */
