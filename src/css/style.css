@@ -3426,7 +3426,7 @@ h1, h2, h3, h4, p, ul, li, hr {
 
 a {
   text-decoration: none;
-  color: none;
+  color: #000;
 }
 
 a:visited {
@@ -3441,8 +3441,8 @@ a:visited {
 }
 
 .info {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #f7f7f7;
 }
 
@@ -3510,6 +3510,8 @@ a:visited {
 }
 
 .header {
+  padding-top: 20px;
+  padding-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3527,21 +3529,44 @@ a:visited {
   display: flex;
 }
 
+.header__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: #c3759e;
+  border-radius: 23px;
+}
+
+.header__phone-num {
+  font-size: 24px;
+  color: #fff;
+}
+
 .brand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .brand__name {
-  font-size: 1.5em;
+  font-size: 29px;
+  text-transform: uppercase;
 }
 
 .brand__motto {
   font-size: 15px;
+  text-transform: uppercase;
 }
 
 .navigation__list {
@@ -3560,5 +3585,132 @@ a:visited {
 
 .navigation__item:last-child {
   margin-right: 0;
+}
+
+.main {
+  position: relative;
+  background: url(../img/header/main-bg.png) center no-repeat;
+  height: 915px;
+}
+
+.main-img {
+  position: absolute;
+  padding-top: 30px;
+  -webkit-transform: translateX(-320px);
+          transform: translateX(-320px);
+}
+
+.main-text {
+  margin-top: 305px;
+  max-width: 600px;
+  color: #ffffff;
+  float: right;
+}
+
+.main-text__subtitle {
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.main-text__title {
+  font-size: 88px;
+  text-transform: uppercase;
+}
+
+.main-text__about {
+  font-size: 16px;
+  max-width: 580px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+
+.main-text__button {
+  width: 205px;
+  height: 50px;
+  background: #ffffff;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.footer {
+  padding-top: 75px;
+  padding-bottom: 35px;
+  background-color: #816890;
+  color: #ffffff;
+  border-bottom: 1px solid #866e94;
+}
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 45px;
+}
+
+.footer__name {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.footer__motto {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.footer__descr {
+  max-width: 245px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.footer-social__link {
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer-social__link-vk {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.footer-social__link-facebook {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.footer-social__link-instagram {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.footer-copyright {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background: #816890;
+  color: #ffffff;
+}
+
+.copyright-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.copyright__description {
+  margin-right: 30px;
+}
+
+.copyright-link__name {
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
