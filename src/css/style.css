@@ -3424,20 +3424,19 @@ h1, h2, h3, h4, p, ul, li, hr {
   margin: 0;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-a:visited {
-  color: #000;
-}
-
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   padding-right: 0;
   padding-left: 0;
+}
+
+.button {
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .info {
@@ -3472,6 +3471,7 @@ a:visited {
 
 .info-contacts__phone-link {
   color: #000;
+  text-decoration: none;
 }
 
 .info-contacts__address {
@@ -3488,18 +3488,18 @@ a:visited {
 }
 
 .info-auth__sign-in {
-  font-weight: 600;
-  font-size: 15px;
   padding-right: 10px;
   border-right: 1px solid #bcbcbc;
-  line-height: 16px;
-  text-decoration: none;
 }
 
 .info-auth__sign-up {
   padding-left: 10px;
+}
+
+.info-auth__sign-link {
   font-weight: 600;
   font-size: 15px;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -3548,6 +3548,7 @@ a:visited {
 .header__phone-num {
   font-size: 24px;
   color: #fff;
+  text-decoration: none;
 }
 
 .brand {
@@ -3587,10 +3588,16 @@ a:visited {
   margin-right: 0;
 }
 
+.navigation__item-link {
+  text-decoration: none;
+  color: #000;
+}
+
 .main {
   position: relative;
   background: url(../img/header/main-bg.png) center no-repeat;
   height: 915px;
+  background-size: cover;
 }
 
 .main-img {
@@ -3629,11 +3636,48 @@ a:visited {
   width: 205px;
   height: 50px;
   background: #ffffff;
-  border: none;
-  border-radius: 25px;
-  font-weight: 600;
-  text-transform: uppercase;
+}
+
+.consult {
+  padding-top: 70px;
+  padding-bottom: 55px;
+}
+
+.consult-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.consult__title {
+  font-size: 41px;
+  margin-bottom: 20px;
+}
+
+.consult__subtitle {
   font-size: 14px;
+  font-weight: 600;
+}
+
+.consult__calling {
+  background-color: #c3759e;
+  height: 50px;
+  width: 205px;
+  color: #ffffff;
+  margin-right: 25px;
+}
+
+.consult__appointment {
+  background-color: #816890;
+  color: #ffffff;
+  height: 50px;
+  width: 205px;
 }
 
 .footer {
@@ -3644,7 +3688,26 @@ a:visited {
   border-bottom: 1px solid #866e94;
 }
 
-.footer-logo {
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-brand__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3654,63 +3717,153 @@ a:visited {
   margin-bottom: 45px;
 }
 
-.footer__name {
-  text-transform: uppercase;
+.footer-brand__title {
   font-size: 25px;
-}
-
-.footer__motto {
   text-transform: uppercase;
-  font-size: 12px;
 }
 
-.footer__descr {
-  max-width: 245px;
+.footer-brand__subtitle {
   font-size: 15px;
-  line-height: 24px;
 }
 
-.footer-social__link {
-  font-size: 16px;
-  color: #fff;
+.footer-brand__description {
+  max-width: 300px;
+  margin-bottom: 40px;
+  font-size: 15px;
+  line-height: 22px;
 }
 
-.footer-social__link-vk {
-  font-size: 16px;
-  color: #ffffff;
-}
-
-.footer-social__link-facebook {
+.footer-brand__social-vk {
   font-size: 16px;
   color: #ffffff;
+  margin-right: 10px;
+  text-decoration: none;
 }
 
-.footer-social__link-instagram {
+.footer-brand__social-facebook {
   font-size: 16px;
   color: #ffffff;
+  margin-right: 10px;
+  text-decoration: none;
 }
 
-.footer-copyright {
-  padding-top: 35px;
-  padding-bottom: 35px;
-  background: #816890;
+.footer-brand__social-instagram {
+  font-size: 16px;
   color: #ffffff;
+  text-decoration: none;
 }
 
-.copyright-text {
+.footer-about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-about__title {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.footer-about__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  font-size: 15px;
+}
+
+.footer-about__item {
+  margin-bottom: 40px;
+}
+
+.footer-about__item:last-child {
+  margin-bottom: 0;
+}
+
+.footer-about__item-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-services__title {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.footer-services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  font-size: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-services__lists {
+  width: 430px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-services__item {
+  margin-bottom: 40px;
+}
+
+.footer-services__item-link {
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.footer-services__item:last-child {
+  margin-bottom: 0;
+}
+
+.footer-copyright {
+  background-color: #816890;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.copyright-text {
+  text-align: right;
+  color: #ffffff;
 }
 
 .copyright__description {
-  margin-right: 30px;
+  font-size: 15px;
 }
 
-.copyright-link__name {
+.copyright__description-link {
+  margin-left: 25px;
   color: #ffffff;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

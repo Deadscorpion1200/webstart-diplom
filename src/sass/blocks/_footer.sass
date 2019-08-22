@@ -4,45 +4,96 @@
   background-color: $footer-color
   color: #ffffff
   border-bottom: 1px solid #866e94
-  &-logo
+  &-block
     display: flex
-    align-items: center
-    margin-bottom: 45px
-  &__name
-    text-transform: uppercase
-    font-size: 25px
-  &__motto
-    text-transform: uppercase
-    font-size: 12px
-  &__descr
-    max-width: 245px
-    font-size: 15px
-    line-height: 24px
-  &-social
-    &__link
-      font-size: 16px
-      color: #fff
+    justify-content: space-between
+  &-brand
+    display: flex
+    flex-direction: column
+    &__block
+      display: flex
+      align-items: center
+      margin-bottom: 45px
+    &__title
+      font-size: 25px
+      text-transform: uppercase
+    &__subtitle
+      font-size: 15px
+    &__description
+      max-width: 300px
+      margin-bottom: 40px
+      font-size: 15px
+      line-height: 22px
+    &__social
       &-vk
         font-size: 16px
         color: #ffffff
+        margin-right: 10px
+        text-decoration: none
       &-facebook
         font-size: 16px
         color: #ffffff
+        margin-right: 10px
+        text-decoration: none
       &-instagram
         font-size: 16px
         color: #ffffff
+        text-decoration: none
+  &-about
+    display: flex
+    flex-direction: column
+    &__title
+      font-size: 36px
+      font-weight: 400
+      margin-bottom: 60px
+    &__list
+      display: flex
+      flex-direction: column
+      list-style: none
+      font-size: 15px
+    &__item
+      margin-bottom: 40px
+      &:last-child
+        margin-bottom: 0
+      &-link
+        text-decoration: none
+        color: #ffffff
+  &-services
+    display: flex
+    flex-direction: column
+    &__title
+      font-size: 36px
+      font-weight: 400
+      margin-bottom: 60px
+    &__list
+      &s
+        width: 430px
+        display: flex
+        justify-content: space-between
+      display: flex
+      list-style: none
+      font-size: 15px
+      flex-direction: column
+    &__item
+      margin-bottom: 40px
+      &-link
+        color: #ffffff
+        font-size: 15px
+        text-decoration: none
+      &:last-child
+        margin-bottom: 0
   &-copyright
+    background-color: $footer-color
     padding-top: 35px
     padding-bottom: 35px
-    background: $footer-color
-    color: #ffffff
-.copyright    
+.copyright
   &-text
-      display: flex
-      justify-content: flex-end
+    text-align: right
+    color: #ffffff
   &__description
-    margin-right: 30px
-  &__link
-  &-link
-    &__name
+    font-size: 15px
+    &-link
+      margin-left: 25px
       color: #ffffff
+      text-decoration: none
+
