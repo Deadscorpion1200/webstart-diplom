@@ -18,6 +18,9 @@
       font-size: 24px
       color: #fff
       text-decoration: none
+.adaptive
+  &-menu
+    display: none  
 .brand
   display: flex
   align-items: flex-end
@@ -41,3 +44,120 @@
     &-link
       text-decoration: none
       color: #000
+@media (max-width: 1200px)
+  .adaptive
+    &-menu
+      display: block
+  .header
+    &__mobile
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 45px
+      height: 45px
+      background-color: $main-color
+      border-radius: 23px
+      margin-right: 20px
+    &-adaptive
+      display: flex
+      &__btn
+        color: #ffffff
+        margin-top: -1px
+        margin-left: 0px
+        position: absolute
+        width: 20px
+        height: 2px
+        background-color: #fff
+        transition: 0.3s
+        &::before
+          content: ''
+          transform: translateY(-8px)
+          position: absolute
+          width: 20px
+          height: 2px
+          background-color: #fff
+          transition: 0.3s
+        &::after
+          transition: 0.3s
+          content: ''
+          position: absolute
+          width: 20px
+          height: 2px
+          background-color: #fff
+          transform: translateY(8px)
+        &_active
+          height: 0
+          &::before
+            transform: rotate(45deg)
+          &::after
+            transform: rotate(-45deg)
+      &__menu
+        display: none
+        &_active
+          background: $main-color
+          display: flex
+          list-style: none
+          justify-content: center
+          flex-direction: column
+          align-items: center
+          transition: 0.2s
+          position: absolute
+          z-index: 3
+          width: 100%
+          left: 0
+      &__item
+        display: block
+      &__link
+        color: #ffffff
+        display: block
+        margin-top: 10px
+        text-transform: uppercase
+        text-decoration: none
+        margin-bottom: 5px
+        font-size: 14px
+        &_active
+          font-size: 16px
+          color: #ffffff
+          display: block
+          margin-top: 15px
+          text-transform: uppercase
+          text-decoration: none
+          margin-bottom: 15px
+  .navigation
+    &__list
+      display: none
+
+@media (max-width: 567px)
+  .header
+    &__phone
+      height: 35px
+      width: 35px
+      &-num
+        font-size: 18px
+      
+    &__mobile
+      height: 35px
+      width: 35px
+      margin-right: 13px
+    &-adaptive
+      &__btn
+        width: 17px
+        &::before
+          width: 17px
+          transform: translateY(-6px)
+        &::after
+          width: 17px
+          transform: translateY(6px)
+        &_active
+          height: 0
+          &::before
+            transform: rotate(45deg)
+          &::after
+            transform: rotate(-45deg)
+  .brand
+    &__img
+      width: 75px
+    &__name
+      font-size: 17px
+    &__motto
+      font-size: 9px

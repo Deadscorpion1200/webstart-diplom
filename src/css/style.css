@@ -3439,6 +3439,32 @@ h1, h2, h3, h4, p, ul, li, hr {
   font-size: 14px;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 580px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 567px) {
+  .container {
+    max-width: 580px;
+  }
+}
+
+@media (max-width: 321px) {
+  .container {
+    max-width: 280px;
+    width: 100%;
+  }
+}
+
 .info {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -3509,6 +3535,69 @@ h1, h2, h3, h4, p, ul, li, hr {
   margin-right: 7px;
 }
 
+@media (max-width: 768px) {
+  .info {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #f7f7f7;
+  }
+  .info-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .info__icon {
+    color: #a49cc0;
+    font-size: 14px;
+    margin-right: 7px;
+  }
+  .info-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .info-contacts__phone {
+    padding-left: 0px;
+    margin-right: 25px;
+    font-size: 12px;
+  }
+  .info-contacts__phone-link {
+    color: #000;
+    text-decoration: none;
+  }
+  .info-contacts__address {
+    font-size: 12px;
+  }
+  .info-auth__sign-link {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 487px) {
+  .info-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .info-auth {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .info-contacts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
 .header {
   padding-top: 20px;
   padding-bottom: 40px;
@@ -3549,6 +3638,10 @@ h1, h2, h3, h4, p, ul, li, hr {
   font-size: 24px;
   color: #fff;
   text-decoration: none;
+}
+
+.adaptive-menu {
+  display: none;
 }
 
 .brand {
@@ -3593,6 +3686,175 @@ h1, h2, h3, h4, p, ul, li, hr {
   color: #000;
 }
 
+@media (max-width: 1200px) {
+  .adaptive-menu {
+    display: block;
+  }
+  .header__mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: #c3759e;
+    border-radius: 23px;
+    margin-right: 20px;
+  }
+  .header-adaptive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header-adaptive__btn {
+    color: #ffffff;
+    margin-top: -1px;
+    margin-left: 0px;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .header-adaptive__btn::before {
+    content: '';
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .header-adaptive__btn::after {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+  }
+  .header-adaptive__btn_active {
+    height: 0;
+  }
+  .header-adaptive__btn_active::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .header-adaptive__btn_active::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .header-adaptive__menu {
+    display: none;
+  }
+  .header-adaptive__menu_active {
+    background: #c3759e;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    left: 0;
+  }
+  .header-adaptive__item {
+    display: block;
+  }
+  .header-adaptive__link {
+    color: #ffffff;
+    display: block;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .header-adaptive__link_active {
+    font-size: 16px;
+    color: #ffffff;
+    display: block;
+    margin-top: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
+  .navigation__list {
+    display: none;
+  }
+}
+
+@media (max-width: 567px) {
+  .header__phone {
+    height: 35px;
+    width: 35px;
+  }
+  .header__phone-num {
+    font-size: 18px;
+  }
+  .header__mobile {
+    height: 35px;
+    width: 35px;
+    margin-right: 13px;
+  }
+  .header-adaptive__btn {
+    width: 17px;
+  }
+  .header-adaptive__btn::before {
+    width: 17px;
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  .header-adaptive__btn::after {
+    width: 17px;
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
+  }
+  .header-adaptive__btn_active {
+    height: 0;
+  }
+  .header-adaptive__btn_active::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .header-adaptive__btn_active::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .brand__img {
+    width: 75px;
+  }
+  .brand__name {
+    font-size: 17px;
+  }
+  .brand__motto {
+    font-size: 9px;
+  }
+}
+
 .main {
   position: relative;
   background: url(../img/header/main-bg.png) center no-repeat;
@@ -3608,10 +3870,12 @@ h1, h2, h3, h4, p, ul, li, hr {
 }
 
 .main-text {
+  display: block;
   margin-top: 305px;
   max-width: 600px;
   color: #ffffff;
   float: right;
+  position: relative;
 }
 
 .main-text__subtitle {
@@ -3638,6 +3902,76 @@ h1, h2, h3, h4, p, ul, li, hr {
   background: #ffffff;
 }
 
+@media (max-width: 1200px) {
+  .main {
+    height: 680px;
+  }
+  .main-img {
+    display: none;
+  }
+  .main-text {
+    float: left;
+    margin-top: 230px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    height: 600px;
+  }
+  .main-text {
+    margin-top: 187px;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-text__subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .main-text__title {
+    font-size: 72px;
+    margin-bottom: 25px;
+  }
+  .main-text__about {
+    display: block;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 567px) {
+  .main {
+    height: 420px;
+  }
+  .main-text {
+    margin-top: 100px;
+  }
+  .main-text__title {
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+  }
+  .main-text__subtitle {
+    font-size: 12px;
+  }
+  .main-text__about {
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .main-text__button {
+    margin-top: 10px;
+  }
+}
+
 .consult {
   padding-top: 70px;
   padding-bottom: 55px;
@@ -3653,6 +3987,8 @@ h1, h2, h3, h4, p, ul, li, hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .consult__title {
@@ -3678,6 +4014,34 @@ h1, h2, h3, h4, p, ul, li, hr {
   color: #ffffff;
   height: 50px;
   width: 205px;
+}
+
+@media (max-width: 1200px) {
+  .consult-info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .consult-text {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 567px) {
+  .consult__title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 487px) {
+  .consult-buttons {
+    text-align: center;
+  }
+  .consult__calling {
+    margin-bottom: 15px;
+    margin-right: 5px;
+  }
 }
 
 .footer {

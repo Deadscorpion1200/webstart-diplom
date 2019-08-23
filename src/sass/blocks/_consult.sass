@@ -5,6 +5,7 @@
     display: flex
     justify-content: space-between
     align-items: center
+    flex-wrap: wrap
   &__title
     font-size: 41px
     margin-bottom: 20px
@@ -22,3 +23,21 @@
     color: #ffffff
     height: 50px
     width: 205px
+@media (max-width: 1200px)
+  .consult
+    &-info
+      justify-content: center
+    &-text
+      margin-bottom: 25px
+      text-align: center
+@media (max-width: 567px)
+  .consult
+    &__title
+      font-size: 25px
+@media (max-width: 487px)
+  .consult
+    &-buttons
+      text-align: center
+    &__calling
+      margin-bottom: 15px
+      margin-right: 5px
