@@ -1,123 +1,138 @@
 .footer
-  padding-top: 75px
-  padding-bottom: 35px
-  background-color: $footer-color
-  color: #ffffff
-  border-bottom: 1px solid #866e94
-  &-block
-    display: flex
-    justify-content: space-between
-  &-brand
-    display: flex
-    flex-direction: column
-    &__block
-      display: flex
-      align-items: center
-      margin-bottom: 45px
-    &__title
-      font-size: 25px
-      text-transform: uppercase
-    &__subtitle
-      font-size: 15px
-    &__description
-      max-width: 300px
-      margin-bottom: 40px
-      font-size: 15px
-      line-height: 22px
-    &__social
-      &-vk
-        font-size: 16px
-        color: #ffffff
-        margin-right: 10px
-        text-decoration: none
-      &-facebook
-        font-size: 16px
-        color: #ffffff
-        margin-right: 10px
-        text-decoration: none
-      &-instagram
-        font-size: 16px
-        color: #ffffff
-        text-decoration: none
-  &-about
-    display: flex
-    flex-direction: column
-    &__title
-      font-size: 36px
-      font-weight: 400
-      margin-bottom: 60px
-    &__list
-      display: flex
-      flex-direction: column
-      list-style: none
-      font-size: 15px
-    &__item
-      margin-bottom: 40px
-      &:last-child
-        margin-bottom: 0
-      &-link
-        text-decoration: none
-        color: #ffffff
-  &-services
-    display: flex
-    flex-direction: column
-    &__title
-      font-size: 36px
-      font-weight: 400
-      margin-bottom: 60px
-    &__list
-      &s
-        width: 430px
-        display: flex
-        justify-content: space-between
-      display: flex
-      list-style: none
-      font-size: 15px
-      flex-direction: column
-    &__item
-      margin-bottom: 40px
-      &-link
-        color: #ffffff
-        font-size: 15px
-        text-decoration: none
-      &:last-child
-        margin-bottom: 0
-  &-copyright
-    background-color: $footer-color
-    padding-top: 35px
-    padding-bottom: 35px
-.copyright
-  &-text
-    text-align: right
-    color: #ffffff
-  &__description
+ padding: 76px 0 35px
+ background-color: #816890
+ color: #fff
+ &-wrap
+  display: flex
+  position: relative
+  justify-content: space-between
+  align-items: center
+  &:after
+   display: block
+   content: ''
+   position: absolute
+   background-color: #f7f7f7
+   height: 1px
+   width: 100%
+   left: 0
+   margin-top: 150px
+   opacity: 0.04
+  &__col
+   &__description
+    display: inline-block
+    margin: 46px 0 43px
+    max-width: 244px
     font-size: 15px
-    &-link
-      margin-left: 25px
-      color: #ffffff
-      text-decoration: none
-      font-size: 15px
-@media (max-width: 1200px)
-  .footer
-    &-block
-      flex-wrap: wrap
-      justify-content: flex-start
-    &-services
-      margin-top: 35px
-@media (max-width: 559px)
-  .footer
-    &-about
-      margin-top: 35px
-    &-services
-      width: 300px
-      &__list
-        &:last-child
-          margin-top: 40px
-        &s
-          width: 300px
-          flex-direction: column
-  .copyright
-    &-text
-      display: flex
-      justify-content: flex-end
-      flex-wrap: wrap
+    line-height: 24px
+   &__social
+    display: flex
+    max-width: 75px
+    justify-content: space-between
+    &__image
+      &__one
+        &__icon
+          color: #ffffff
+      &__two
+        &__icon
+          color: #ffffff
+      &__three
+        &__icon
+          color: #ffffff
+   &__title
+    margin: 0
+    font-size: 36px
+   &-list
+    line-height: 54px
+    &__item
+     font-size: 14px
+     list-style: none
+    &-two
+     margin-top: 42px
+    &__text
+     color: #fff
+     text-decoration: none
+   &__social
+    &__image
+     &__one
+      width: 22px
+      height: 13px
+     &__two
+      width: 10px
+      height: 19px
+     &__three
+      width: 16px
+      height: 16px
+ &-company
+  &-wrap
+   display: flex
+   align-items: center
+  &-words
+   max-width: 235px
+   &__name
+    font-size: 25px
+    font-weight: 600
+    display: block
+   &__tagline
+    font-size: 11px
+    letter-spacing: 1.5px
+  &__image
+   max-width: 89px
+ &-developer
+  text-align: right
+  margin-top: 80px
+  font-size: 15px
+  &__link
+   margin-left: 30px
+   color: #fff
+   text-decoration: none
+@media (max-width: 1201px)
+ .footer
+  padding: 50px 0 20px
+  &-wrap
+   &__col
+    &__title
+     font-size: 30px
+    &__description
+     margin: 30px 0 30px
+    &-list
+     line-height: 40px
+     &-two
+       width: 148px
+@media (max-width: 992px)
+ .footer
+  &-wrap
+   &__col
+    &__title
+     font-size: 25px
+    &-list
+     &-two
+      margin-top: 28px
+@media (max-width: 760px)
+ .footer
+  &-wrap
+   flex-flow: wrap
+   &:after
+    margin-top: 220px
+   &__col
+    &-list
+     &-two
+      margin-top: 25px
+      margin-right: -6px
+  &-developer
+   margin-top: 50px
+  &-company
+   margin-bottom: 15px
+@media (max-width: 568px)
+ .footer
+  &-wrap
+    flex-direction: column
+    align-items: flex-start
+    &:after
+      margin-top: 680px
+    &__col
+      &-list
+        &-two
+          margin-top: 0
+@media (max-width: 465px)
+ .br
+  display: block

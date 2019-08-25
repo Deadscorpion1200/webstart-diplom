@@ -1,0 +1,62 @@
+.stats
+    padding-top: 135px
+    padding-bottom: 130px
+    background-color: $stats-bg
+    &__item
+        margin-right: 30px
+        margin-left: 30px
+        &s
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            align-items: center
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__img
+        margin-bottom: 25px
+    &__num
+        color: $footer-color
+        font-size: 54px
+        font-weight: 600
+        margin-bottom: 10px
+    &__about
+        color: #fff
+@media (max-width: 1200px)
+    .stats
+        &__item
+            width: 182px
+            &s
+                justify-content: space-around
+                
+            margin-bottom: 40px
+            &:last-child
+                margin-bottom: 0
+@media (max-width: 768px)
+    .stats
+        &__item
+            &s
+                justify-content: space-between
+            &:nth-child(3)
+                margin-bottom: 0
+@media (max-width: 568px)
+    .stats
+        padding-top: 55px
+        padding-bottom: 60px
+        
+        &__icon
+            width: 25px
+        &__num
+            font-size: 35px
+        &__about
+            font-size: 13px
+        &__item
+            &s
+                justify-content: center
+@media (max-width: 537px)
+    .stats
+        &__item
+            &:nth-child(3)
+                margin-bottom: 40px
+        &__img
+            margin-bottom: 16px

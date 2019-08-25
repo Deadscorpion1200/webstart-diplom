@@ -1,0 +1,72 @@
+.special
+    background: linear-gradient(to top, $footer-color 25%, $main-color 90%)
+    background-size: cover
+    &-wrap
+    &__img
+        position: absolute
+        padding-top: 20px
+        transform: translateX(-160px)
+    &__text
+        display: block
+        position: relative
+        left: 50%
+        max-width: 600px
+        padding-top: 271px
+        padding-bottom: 225px
+    &__title
+        display: block
+        font-size: 81px
+        text-transform: uppercase
+        margin-bottom: 5px
+        color: #ffffff
+    &__subtitle
+        display: block
+        text-transform: uppercase
+        color: #ffffff
+        font-size: 45px
+        margin-bottom: 45px
+    &__description
+        font-size: 20px
+        color: #ffffff
+        display: block
+        margin-bottom: 35px
+        text-transform: uppercase
+    &__button
+        margin-bottom: 245px
+@media (max-width: 1200px)
+    .special
+        &__img
+            transform: translateX(0)
+        &__text
+            opacity: 0.7
+            left: 0
+            text-align: center
+            margin-left: auto
+            margin-right: auto
+@media (max-width: 991px)
+    .special
+        &__img
+            display: none
+        &__text
+            opacity: 1
+@media (max-width: 767px)
+    .special
+        &__text
+            padding-top: 195px
+            padding-bottom: 195px
+@media (max-width: 576px)
+    .special
+        &__text    
+            padding-top: 87px
+            padding-bottom: 94px
+        &__description
+            font-size: 16px
+        &__title
+            font-size: 44px
+            max-width: 310px
+            margin-left: auto
+            margin-right: auto
+            margin-bottom: 20px
+        &__subtitle
+            font-size: 25px
+            margin-bottom: 24px
