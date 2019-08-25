@@ -1,0 +1,148 @@
+.news
+    background-color: $services-color
+    padding-top: 120px
+    padding-bottom: 95px
+    &-container
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &-block
+        &s
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            width: 586px
+    &__header
+        font-size: 41px
+        color: $header-color
+        position: relative
+        margin-bottom: 100px
+        &::after
+            content: ""
+            position: absolute
+            width: 90px
+            height: 2px
+            left: 0%
+            bottom: -45px
+            background-color: $header-border
+    &-block
+        position: relative
+        width: 280px
+        background-color: #fff
+        padding: 30px 30px 60px 30px
+    &__date
+        position: absolute
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        top: -23px
+        left: 23px
+        width: 71px
+        height: 71px
+        border-radius: 50%
+        background: $main-color
+        color: #ffffff
+        font-size: 14px
+        text-transform: uppercase
+        font-weight: 600
+        &_num
+            font-size: 24px
+    &__title
+        font-size: 22px
+        color: $header-color
+        font-weight: 600
+        max-width: 135px
+        margin-top: 30px
+        margin-bottom: 30px
+    &__description
+        font-size: 14px
+        line-height: 18px
+        max-width: 170px
+        margin-bottom: 40px
+    &__more
+        text-transform: uppercase
+        font-weight: 600
+        margin-right: auto
+        margin-left: auto
+        display: block
+        color: $main-color
+        text-decoration: none
+        position: relative
+        &::after
+            content: ""
+            background-color: $main-color
+            display: block
+            width: 25%
+            height: 2px
+            position: absolute
+            left: 22%
+            bottom: -12px
+            transform: translateX(-50%)
+
+.anouncement
+    &__header
+        font-size: 46px
+        color: $header-color
+        margin-bottom: 94px
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            width: 90px
+            height: 2px
+            left: 0%
+            bottom: -45px
+            background-color: $header-border
+    &-block
+        background-color: #fff
+        padding: 30px
+        position: relative
+    &__socials
+        width: 195px
+        height: 47px
+        border-radius: 25px
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        top: 335px
+        background-color: #fff
+        left: 33%
+    &-socials
+        &__link
+            margin-right: 15px
+            color: #bcbcbc
+            &:last-child
+                margin-right: 0
+    &__title
+        font-weight: 600
+        font-size: 22px
+        color: $header-color
+        text-align: center
+        margin-top: 25px
+        margin-bottom: 19px
+    &__nav
+        margin-left: auto
+        margin-right: auto
+        text-align: center
+        &-link
+            text-transform: uppercase
+            font-size: 14px
+            color: #bcbcbc
+            text-decoration: none
+            &:first-child
+                padding-right: 10px
+                border-right: 2px solid #bcbcbc
+            &:last-child
+                padding-left: 5px
+@media (max-width: 1200px)
+    .news
+        &-container
+            justify-content: center
+        &-blocks
+            margin-bottom: 35px
+@media (max-width: 767px)
+    .anouncement
+        &__socials
+            top: 329px

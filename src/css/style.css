@@ -4582,6 +4582,229 @@ h1, h2, h3, h4, p, ul, li, hr {
   }
 }
 
+.news {
+  background-color: #f7f7f7;
+  padding-top: 120px;
+  padding-bottom: 95px;
+}
+
+.news-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.news-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 586px;
+}
+
+.news__header {
+  font-size: 41px;
+  color: #454545;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.news__header::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 2px;
+  left: 0%;
+  bottom: -45px;
+  background-color: #ebebeb;
+}
+
+.news-block {
+  position: relative;
+  width: 280px;
+  background-color: #fff;
+  padding: 30px 30px 60px 30px;
+}
+
+.news__date {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: -23px;
+  left: 23px;
+  width: 71px;
+  height: 71px;
+  border-radius: 50%;
+  background: #c3759e;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.news__date_num {
+  font-size: 24px;
+}
+
+.news__title {
+  font-size: 22px;
+  color: #454545;
+  font-weight: 600;
+  max-width: 135px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.news__description {
+  font-size: 14px;
+  line-height: 18px;
+  max-width: 170px;
+  margin-bottom: 40px;
+}
+
+.news__more {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  color: #c3759e;
+  text-decoration: none;
+  position: relative;
+}
+
+.news__more::after {
+  content: "";
+  background-color: #c3759e;
+  display: block;
+  width: 25%;
+  height: 2px;
+  position: absolute;
+  left: 22%;
+  bottom: -12px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.anouncement__header {
+  font-size: 46px;
+  color: #454545;
+  margin-bottom: 94px;
+  position: relative;
+}
+
+.anouncement__header::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 2px;
+  left: 0%;
+  bottom: -45px;
+  background-color: #ebebeb;
+}
+
+.anouncement-block {
+  background-color: #fff;
+  padding: 30px;
+  position: relative;
+}
+
+.anouncement__socials {
+  width: 195px;
+  height: 47px;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 335px;
+  background-color: #fff;
+  left: 33%;
+}
+
+.anouncement-socials__link {
+  margin-right: 15px;
+  color: #bcbcbc;
+}
+
+.anouncement-socials__link:last-child {
+  margin-right: 0;
+}
+
+.anouncement__title {
+  font-weight: 600;
+  font-size: 22px;
+  color: #454545;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 19px;
+}
+
+.anouncement__nav {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.anouncement__nav-link {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #bcbcbc;
+  text-decoration: none;
+}
+
+.anouncement__nav-link:first-child {
+  padding-right: 10px;
+  border-right: 2px solid #bcbcbc;
+}
+
+.anouncement__nav-link:last-child {
+  padding-left: 5px;
+}
+
+@media (max-width: 1200px) {
+  .news-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .news-blocks {
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .anouncement__socials {
+    top: 329px;
+  }
+}
+
 .consult {
   padding-top: 70px;
   padding-bottom: 55px;
