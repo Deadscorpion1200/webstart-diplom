@@ -6,12 +6,13 @@
         display: flex
         justify-content: space-between
         flex-wrap: wrap
+    &-wrap
+        width: 586px
     &-block
         &s
             display: flex
             justify-content: space-between
             flex-wrap: wrap
-            width: 586px
     &__header
         font-size: 41px
         color: $header-color
@@ -146,3 +147,18 @@
     .anouncement
         &__socials
             top: 329px
+@media (max-width: 623px)
+    .news
+        &-block
+            margin-bottom: 35px
+            &s
+                justify-content: center
+    .anouncement
+        &-block
+            width: 280px
+            padding: 10px
+        &__socials
+            top: 151px
+            left: 33%
+            width: 100px
+            height: 35px

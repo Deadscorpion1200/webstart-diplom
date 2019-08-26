@@ -1,138 +1,90 @@
 .footer
- padding: 76px 0 35px
- background-color: #816890
- color: #fff
- &-wrap
-  display: flex
-  position: relative
-  justify-content: space-between
-  align-items: center
-  &:after
-   display: block
-   content: ''
-   position: absolute
-   background-color: #f7f7f7
-   height: 1px
-   width: 100%
-   left: 0
-   margin-top: 150px
-   opacity: 0.04
-  &__col
-   &__description
-    display: inline-block
-    margin: 46px 0 43px
-    max-width: 244px
-    font-size: 15px
-    line-height: 24px
-   &__social
+  background-color: $footer-color
+  padding-top: 75px
+  padding-bottom: 40px
+  border-bottom: 1px solid #866e94
+  &-wrap
     display: flex
-    max-width: 75px
     justify-content: space-between
-    &__image
-      &__one
-        &__icon
-          color: #ffffff
-      &__two
-        &__icon
-          color: #ffffff
-      &__three
-        &__icon
-          color: #ffffff
-   &__title
-    margin: 0
-    font-size: 36px
-   &-list
-    line-height: 54px
-    &__item
-     font-size: 14px
-     list-style: none
-    &-two
-     margin-top: 42px
-    &__text
-     color: #fff
-     text-decoration: none
-   &__social
-    &__image
-     &__one
-      width: 22px
-      height: 13px
-     &__two
-      width: 10px
-      height: 19px
-     &__three
-      width: 16px
-      height: 16px
- &-company
-  &-wrap
-   display: flex
-   align-items: center
-  &-words
-   max-width: 235px
-   &__name
-    font-size: 25px
-    font-weight: 600
-    display: block
-   &__tagline
-    font-size: 11px
-    letter-spacing: 1.5px
-  &__image
-   max-width: 89px
- &-developer
-  text-align: right
-  margin-top: 80px
-  font-size: 15px
-  &__link
-   margin-left: 30px
-   color: #fff
-   text-decoration: none
-@media (max-width: 1201px)
- .footer
-  padding: 50px 0 20px
-  &-wrap
-   &__col
+    &__brand
+      display: flex
+      flex-direction: column
+  &-brand
+    &__img
+      margin-right: 9px
+    &__header
+      color: #ffffff
+      display: flex
+      align-items: center
+      margin-bottom: 35px
     &__title
-     font-size: 30px
+      text-transform: uppercase
+      font-size: 25px
+    &__subtitle
+      text-transform: uppercase
+      font-size: 13px
     &__description
-     margin: 30px 0 30px
-    &-list
-     line-height: 40px
-     &-two
-       width: 148px
-@media (max-width: 992px)
- .footer
-  &-wrap
-   &__col
+      color: #ffffff
+      max-width: 250px
+      font-size: 15px
+      line-height: 24px
+      margin-bottom: 35px
+    &-social
+      &__icon
+        color: #ffffff
+        margin-right: 10px
+        &:last-child
+          margin-right: 0
+  &-col
+    &-wrap
+      display: flex
+      align-items: flex-start
+      justify-content: space-around
+      width: 100%
+    &__menu
+      display: flex
+      flex-direction: column
+      &-two
+        margin-top: 105px
+      
+  &-menu
     &__title
-     font-size: 25px
-    &-list
-     &-two
-      margin-top: 28px
-@media (max-width: 760px)
- .footer
-  &-wrap
-   flex-flow: wrap
-   &:after
-    margin-top: 220px
-   &__col
-    &-list
-     &-two
-      margin-top: 25px
-      margin-right: -6px
-  &-developer
-   margin-top: 50px
-  &-company
-   margin-bottom: 15px
-@media (max-width: 568px)
- .footer
-  &-wrap
-    flex-direction: column
-    align-items: flex-start
-    &:after
-      margin-top: 680px
-    &__col
-      &-list
-        &-two
-          margin-top: 0
-@media (max-width: 465px)
- .br
-  display: block
+      margin-bottom: 60px
+      font-size: 36px
+      font-weight: 400
+      color: #ffffff
+    &__item
+      list-style: none
+      margin-bottom: 35px
+      font-size: 14px
+    &__link
+      color: #ffffff
+      text-decoration: none
+  &-copyright
+    background-color: $footer-color
+    &-container
+      color: #fff
+      height: 85px
+      display: flex
+      justify-content: flex-end
+      align-items: center
+    &__link
+      margin-left: 30px
+      color: #ffffff
+      text-decoration: none
+@media (max-width: 1200px)
+  .footer
+    &-wrap
+      flex-wrap: wrap
+    &-col
+      &-wrap
+        &:first-child
+          margin-left: 50px
+      &__menu
+        &-one
+          transform: translateX(40px)
+@media (max-width: 767px)
+  .footer
+    &-col
+      &-wrap
+        flex-wrap: wrap
