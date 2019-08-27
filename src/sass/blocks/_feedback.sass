@@ -1,0 +1,133 @@
+.feedback
+ background-color: #9e96bc
+ background: url(../img/reviews/review-bg.png) center no-repeat
+ bacgkround-size: cover
+ color: #fff
+ &-wrap
+  padding: 105px 0 175px
+ &-block
+  &__footer
+   margin-top: 40px
+   margin-left: 20px
+   display: flex
+   justify-content: flex-start
+   align-items: center
+   &__image
+    margin-right: 20px
+    width: 75px
+    height: 75px
+   &__data
+    display: flex
+    flex-direction: column
+    &__name
+     margin-bottom: 5px
+     font-size: 22px
+    &__profession
+     font-size: 14px
+ &s
+  &-wrap
+   margin-top: 85px
+   display: flex
+   justify-content: space-between
+   flex-wrap: wrap
+ &__title
+  position: relative
+  margin: 0
+  text-align: center
+  font-size: 41px
+  &:after
+   content: ''
+   position: absolute
+   background-color: #fff
+   display: block
+   height: 3px
+   width: 10%
+   left: 50%
+   transform: translateX(-50%)
+   margin-top: 40px
+ .cloud
+  display: flex
+  flex-direction: column
+  padding: 55px 40px 55px 35px
+  max-width: 380px
+  max-height: 245px
+  background-color: #ffffff
+  position: relative
+  &:before
+   content: ''
+   width: 0
+   height: 0
+   position: absolute
+   top: 100%
+   right: calc(82% - 12px)
+   border-left: 20px solid transparent
+   border-right: 20px solid transparent
+   border-top: 24px solid #ffffff
+  &__review
+   width: 327px
+   color: #979797
+   font-size: 15px
+   line-height: 24px
+  .stars
+   margin-bottom: 32px
+.fas
+ color: #c3759e
+ &:last-child
+  color: #bcbcbc
+@media (max-width: 1201px)
+ .feedback
+  .cloud
+   padding: 20px 25px 20px 15px
+   max-width: 340px
+   max-height: 210px
+  &-wrap
+   padding: 50px 0
+  &s
+   &-wrap
+    margin-top: 60px
+    justify-content: center
+  &-block
+   &:first-child
+    margin-right: 25px
+   &:last-child
+    margin-top: 20px
+@media (max-width: 992px)
+ .feedback
+  .cloud
+   &__review
+    max-width: 327px
+    line-height: 20px
+   .stars
+    margin-bottom: 10px
+  &-block
+   margin-bottom: 20px
+   &:last-child
+   &__footer
+  &__title
+   font-size: 35px
+   &:after
+    margin-top: 20px
+  .cloud
+  &s
+   &-wrap
+@media (max-width: 810px)
+ .feedback
+  background-image: linear-gradient(to top, #816890 0%, #dc7aa3 100%)
+
+  &-block
+   margin-top: 20px
+   &:first-child
+    margin-right: 0
+  &s
+   &-wrap
+    flex-direction: column
+    align-items: center
+@media (max-width: 465px)
+ .feedback
+  &__title
+   font-size: 25px
+  .cloud
+   max-width: 280px
+   padding: 10px
+   &__review
+    width: auto

@@ -9,9 +9,46 @@ $(document).ready(function(){
     e.preventDefault();
     $('.header-adaptive__menu').toggleClass('header-adaptive__menu_active');
   });
-  // Высчитывание пропорциональной высоты блока анонсов для соц.сетей
-  $('.anouncement__socials').top($('anouncement-block').height()/1.57);
-  $(window).resize(function(){
-    $('.anouncement__socials').top($('.anouncement-block').height()/1.57);
-  });
+  // Подключим валидатор формы
+  $('form').each(function () {
+    $(this).validate({
+
+      rules: {
+        username: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
+        userphone: {
+          required: true
+        },
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        username: {
+          required: "Укажите имя",
+          minlength: jQuery.validator.format("Ещё {0} символа"),
+          maxlength: jQuery.validator.format("Надо меньше {0} символов")
+        },
+        email: {
+          required: "Нам нужен ваш email",
+          email: "email введен не верно"
+        },
+        userphone: {
+          required: "Укажите телефон"
+        }
+      },
+
+      errorClass: "invalid",
+      errorElement: "label"
+    });
+  })
+
+  // Маска для телефона
+  // $('.phone').mask('+7 (999) 999-99-99');
+
+  
 });

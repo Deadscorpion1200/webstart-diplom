@@ -61,13 +61,13 @@
                                 <a href="#" class="navigation__item-link">О компании</a>
                             </li>
                             <li class="navigation__item">
-                                <a href="#" class="navigation__item-link">Новости</a>
+                                <a href="news.html" class="navigation__item-link">Новости</a>
                             </li>
                             <li class="navigation__item">
                                 <a href="services.html" class="navigation__item-link">Услуги</a>
                             </li>
                             <li class="navigation__item">
-                                <a href="#" class="navigation__item-link">Отзывы</a>
+                                <a href="reviews.html" class="navigation__item-link">Отзывы</a>
                             </li>
                             <li class="navigation__item">
                                 <a href="#" class="navigation__item-link">Контакты</a>
@@ -167,8 +167,16 @@
                         <h1 class="anouncement__header">Анонсы</h1>
                         <!-- /.anouncement__header -->
                         <div class="anouncement-block">
-                            <div class="anouncement__video">
-                                <img src="img/news/anouncement.jpg" alt="Анонс">
+                            <div class="anouncement__video slider">
+                                <div class="slider__item">
+                                    <iframe width="528" height="328" src="https://www.youtube.com/embed/-yZfdyPMzCE"frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
+                                </div>
+                                <div class="slider__item">
+                                    <iframe width="528" height="328" src="https://www.youtube.com/embed/__Kavgr47F8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="slider__item">
+                                    <iframe width="528" height="328" src="https://www.youtube.com/embed/DqfgJDtDIcg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
                             </div>
                             <!-- /.anouncement__video -->
                             <div class="anouncement__socials">
@@ -186,8 +194,8 @@
                             <div class="anouncement__title">Рабочий процесс</div>
                             <!-- /.anouncement__title -->
                             <div class="anouncement__nav">
-                                <a href="#" class="anouncement__nav-link">Предыдущее</a>
-                                <a href="#" class="anouncement__nav-link">Следующее</a>
+                                <a href="#" class="anouncement__nav-link anouncement__nav-prev">Предыдущее</a>
+                                <a href="#" class="anouncement__nav-link anouncement__nav-next">Следующее</a>
                             </div>
                             <!-- /.anouncements__nav -->
                         </div>
@@ -222,97 +230,84 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer-wrap">
-                    <div class="footer-wrap__col">
-                        <div class="footer-company">
-                            <div class="footer-company-wrap">
-                                <div class="footer-company__image">
-                                    <img src="img/footer/footer-logo.png" alt="логотип">
-                                </div>
-                                <div class="footer-company-words">
-                                    <span class="footer-company-words__name">МИРОЛЮБЕЦ</span>
-                                    <span class="footer-company-words__tagline">ЗАКРОЕМ ВАШИ КРЫЛЬЯ</span>
+                    <div class="footer-col-wrap">
+                        <div class="footer-col__brand">
+                            <div class="footer-brand__header">
+                                <img src="img/footer/footer-logo.png" alt="Логотип" class="footer-brand__img">
+                                <div class="footer-brand__text">
+                                    <h1 class="footer-brand__title">Миролюбец</h1>
+                                    <span class="footer-brand__subtitle">Закроем ваши крылья</span>
                                 </div>
                             </div>
-                            <div class="footer-wrap__col__description">С другой стороны консультация с
-                                широким активом в значительной степени обуславливает создание</div>
-                            <!-- /.footer-wrap__col__description -->
-                            <div class="footer-wrap__col__social">
-                                <div class="footer-wrap__col__social__image__one">
-                                    <a href="#" class="footer-wrap__col__social__image__one__icon">
-                                        <i class="fa fa-vk"></i>
-                                    </a>
-                                </div>
-                                <div class="footer-wrap__col__social__image__two">
-                                    <a href="#" class="footer-wrap__col__social__image__two__icon">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </i>
+                            <!-- /.footer-brand__header -->
+                            <div class="footer-brand__description">
+                                С другой стороны консультация с широким активом в значительной степени обуславливает создание
                             </div>
-                            <div class="footer-wrap__col__social__image__three">
-                                <a href="#" class="footer-wrap__col__social__image__three__icon">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-
+                            <!-- /.footer-brand__description -->
+                            <div class="footer-brand__social">
+                                <a href="vk.com" class="footer-brand-social__icon"><i class="fa fa-vk"></i></a>
+                                <a href="facebook.com" class="footer-brand-social__icon"><i class="fa fa-facebook"></i></a>
+                                <a href="instagram.com" class="footer-brand-social__icon"><i class="fa fa-instagram"></i></a>
                             </div>
+                            <!-- /.footer-brand__social -->
                         </div>
+                        <!-- /.footer-col__brand -->
+                        <div class="footer-col__menu-one">
+                            <h1 class="footer-menu__title">О компании</h1>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Новости</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Анонсы</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.footer-col__menu -->
                     </div>
+                    <!-- /.footer-col-wrap -->
+                    <div class="footer-col-wrap">
+                        <div class="footer-col__menu">
+                            <h1 class="footer-menu__title">Наши услуги</h1>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Психология</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Психоаналитика</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Услуги медиатора</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.footer-col__menu -->
+                        <div class="footer-col__menu-two">                            
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Психология</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Психоаналитика</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Услуги медиатора</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.footer-col__menu-two -->
+                    </div>
+                    <!-- /.footer-col-wrap -->
                 </div>
-                <!-- /.footer-wrap__col -->
-                <div class="footer-wrap__col">
-                    <span class="footer-wrap__col__title">О компании</span>
-                    <ul class="footer-wrap__col-list">
-                        <li class="footer-wrap__col-list__item">
-                            <a href="#" class="footer-wrap__col-list__text">Новости</a>
-                        </li>
-                        <li class="footer-wrap__col-list__item">
-                            <a href="#" class="footer-wrap__col-list__text">Анонсы</a>
-                        </li>
-                        <li class="footer-wrap__col-list__item modal-window">
-                            <a href="#" class="footer-wrap__col-list__text">Контакты</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.footer-wrap__col -->
-                <div class="footer-wrap__col">
-                    <span class="footer-wrap__col__title">Наши услуги</span>
-                    <ul class="footer-wrap__col-list">
-                        <li class="footer-wrap__col-list__item">
-                            <a href="#" class="footer-wrap__col-list__text">Психология</a>
-                        </li>
-                        <li class="footer-wrap__col-list__item">
-                            <a href="#" class="footer-wrap__col-list__text">Психоаналитика</a>
-                        </li>
-                        <li class="footer-wrap__col-list__item">
-                            <a href="#" class="footer-wrap__col-list__text">Услуги медиатора</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.footer-wrap__col -->
-                <div class="footer-wrap__col">
-                    <ul class="footer-wrap__col-list footer-wrap__col-list-two">
-                        <li class="footer-wrap__col-list__item">
-                            <a href="#" class="footer-wrap__col-list__text">Психология</a>
-                        </li>
-                        <li class="footer-wrap__col-list__item">
-                            <a href="#" class="footer-wrap__col-list__text">Психоаналитика</a>
-                        </li>
-                        <li class="footer-wrap__col-list__item">
-                            <a href="#" class="footer-wrap__col-list__text">Услуги медиатора</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.footer-wrap__col -->
+                <!-- /.footer-wrap -->
+                
             </div>
-            <!-- /.footer-wrap -->
-            <div class="footer-developer">
-                <span class="footer-developer__text">Создание и продвижение сайта:</span>
-                <span class="br"></span>
-                <a href="https://vk.com/glo_academy" class="footer-developer__link">Glo Academy</a>
+            <!-- /.container -->
+        </footer>
+        <!-- /.footer -->
+        <div class="footer-copyright">
+            <div class="container footer-copyright-container">
+                <div class="footer-copyright__text">Создание и продвижение сайтов</div>
+                <a href="http://vk.com/glo-academy" class="footer-copyright__link">Glo Academy</a>
             </div>
         </div>
-        <!-- /.container -->
-    </footer>
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/main.js"></script>
-</body>
+        
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script>
+        // Скрипт слайдера
+        $('.slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: $('.anouncement__nav-prev'),
+            nextArrow: $('.anouncement__nav-next')
+        });
+        </script>
+    </body>
 </html>

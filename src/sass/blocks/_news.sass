@@ -9,6 +9,10 @@
     &-wrap
         width: 586px
     &-block
+        position: relative
+        width: 280px
+        background-color: #fff
+        padding: 30px 30px 60px 30px
         &s
             display: flex
             justify-content: space-between
@@ -26,11 +30,6 @@
             left: 0%
             bottom: -45px
             background-color: $header-border
-    &-block
-        position: relative
-        width: 280px
-        background-color: #fff
-        padding: 30px 30px 60px 30px
     &__date
         position: absolute
         display: flex
@@ -95,6 +94,9 @@
             left: 0%
             bottom: -45px
             background-color: $header-border
+    &__video
+        width: 528px
+        height: 328px
     &-block
         background-color: #fff
         padding: 30px
@@ -143,22 +145,83 @@
             justify-content: center
         &-blocks
             margin-bottom: 35px
+@media (min-width: 992px)
+    .news
+        &-block
+            &:hover
+                background-color: $main-color
+                color: #fff
+                .news
+                    &__title
+                        color: #ffffff
+                    &__more
+                        color: #ffffff
+                        &::after
+                            background-color: #fff
+                    &__date
+                        background: $footer-color
+@media (max-width: 991px)
+    .news
+        &__header
+            font-size: 28px
+    .anouncement
+        &__header
+            font-size: 28px
 @media (max-width: 767px)
     .anouncement
         &__socials
             top: 329px
 @media (max-width: 623px)
     .news
+        padding-top: 65px
+        &-wrap
+            width: 280px
+        &__header
+            margin-bottom: 76px
+            text-align: center
+            &::after
+                bottom: -25px
+                transform: translateX(100px)
         &-block
             margin-bottom: 35px
+            padding-bottom: 50px
             &s
                 justify-content: center
+        &__title
+            font-size: 19px
+            margin-top: 20px
+            margin-bottom: 20px
+        &__description
+            font-size: 12px
+            margin-bottom: 30px
+        &__more
+            font-size: 14px
+            &::after
+                transform: translateX(60%)
+                left: -18px
     .anouncement
+        &__header
+            margin-bottom: 70px
+            text-align: center
+            &::after
+                bottom: -25px
+                transform: translateX(100px)
+        &__video
+            width: 260px
+            height: 161px
         &-block
             width: 280px
             padding: 10px
+        &__title
+            font-size: 18px
+            margin-bottom: 13px
+        &__nav-link
+            font-size: 12px
         &__socials
             top: 151px
             left: 33%
             width: 100px
             height: 35px
+    iframe
+        width: 260px
+        height: 161px

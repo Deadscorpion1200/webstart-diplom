@@ -41,10 +41,16 @@
       align-items: flex-start
       justify-content: space-around
       width: 100%
+    &__brand
+      width: 262px
     &__menu
       display: flex
       flex-direction: column
+      width: 262px
+      &-one
+        width: 262px
       &-two
+        width: 262px
         margin-top: 105px
       
   &-menu
@@ -79,12 +85,55 @@
     &-col
       &-wrap
         &:first-child
-          margin-left: 50px
       &__menu
         &-one
-          transform: translateX(40px)
+@media (max-width: 991px)
+  .footer
+    &-brand
+      &__img
+        width: 70px
+      &__title
+        font-size: 22px
+      &__subtitle
+        font-size: 12px
+      &__description
+        font-size: 14px
+    &-menu
+      &__title
+        font-size: 25px
+        
 @media (max-width: 767px)
   .footer
     &-col
       &-wrap
         flex-wrap: wrap
+@media (max-width: 582px)
+  .footer
+    padding-top: 45px
+    padding-bottom: 0
+    &-col
+      &__brand
+        margin-bottom: 25px
+      &__menu
+        &-two
+          margin-top: 0
+    &-brand__header
+      margin-bottom: 20px
+    &-brand__description
+      margin-bottom: 20px
+    &-menu
+      &__title
+        margin-bottom: 20px
+      &__item
+        margin-bottom: 15px
+    &-copyright
+      padding-top: 0px
+      padding-bottom: 0px
+      &-container
+        padding-top: 15px
+        padding-bottom: 15px
+        height: 50px
+      &__text
+        font-size: 14px
+      &__link
+        font-size: 14px
