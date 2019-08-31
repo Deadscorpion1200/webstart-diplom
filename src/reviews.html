@@ -4,8 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/style.css">
         <title>Миролюбец | Центр психологической поддержки |</title>
+        <!-- Yandex.Metrika counter --> 
+        <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(55091422, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> 
+        <!-- /Yandex.Metrika counter -->
     </head>
     <body>
         <div class="info">
@@ -43,13 +47,13 @@
             <div class="container header-container">
                 <div class="header">
                     <div class="header__brand">
-                        <div class="brand">
+                        <a href="index.html" class="brand">
                             <img src="img/header/header-logo.png" alt="Логотип" class="brand__img">
                             <div class="brand-name">
                                 <h1 class="brand__name">Миролюбец</h1>
                                 <span class="brand__motto">Закроем ваши крылья</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <!-- /.brand -->
                     <nav class="header__navigation">
@@ -58,7 +62,7 @@
                                 <a href="index.html" class="navigation__item-link">Главная</a>
                             </li>
                             <li class="navigation__item">
-                                <a href="#" class="navigation__item-link">О компании</a>
+                                <a href="#about" class="navigation__item-link">О компании</a>
                             </li>
                             <li class="navigation__item">
                                 <a href="news.html" class="navigation__item-link">Новости</a>
@@ -70,7 +74,7 @@
                                 <a href="reviews.html" class="navigation__item-link">Отзывы</a>
                             </li>
                             <li class="navigation__item">
-                                <a href="#" class="navigation__item-link">Контакты</a>
+                                <a class="navigation__item-link modal-window">Контакты</a>
                             </li>
                         </ul>
 
@@ -83,7 +87,7 @@
                                 <span></span>
                             </a>
                         </div>
-                        <a href="tel:+79503216555" class="header__phone-num">
+                        <a class="header__phone-num modal-window" onclick="ym(55091422, 'reachGoal', 'callMe'); return true;">
                             <div class="header__phone">
                                 <i class="fa fa-phone header__phone-num"></i>
                             </div>
@@ -98,7 +102,7 @@
                             <a href="index.html" class="header-adaptive__link_active">Главная</a>
                         </li>
                         <li class="header-adapbier__item">
-                            <a href="#" class="header-adaptive__link">О компании</a>
+                            <a href="#about" class="header-adaptive__link">О компании</a>
                         </li>
                         <li class="header-adapbier__item">
                             <a href="news.html" class="header-adaptive__link">Новости</a>
@@ -110,7 +114,7 @@
                             <a href="reviews.html" class="header-adaptive__link">Отзывы</a>
                         </li>
                         <li class="header-adapbier__item">
-                            <a href="#" class="header-adaptive__link">Контакты</a>
+                            <a class="header-adaptive__link modal-window">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -121,16 +125,16 @@
             <section class="feedback">
                 <div class="container">
                     <div class="feedback-wrap">
-                        <h1 class="feedback__title">Отзывы наших клиентов</h1>
+                        <h2 class="feedback__title">Отзывы наших клиентов</h2>
                         <div class="feedbacks-wrap">
                             <div class="feedback-block">
                                 <div class="cloud">
                                     <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
+                                        <i class="fa fa-star stars-icon"></i>
+                                        <i class="fa fa-star stars-icon"></i>
+                                        <i class="fa fa-star stars-icon"></i>
+                                        <i class="fa fa-star stars-icon"></i>
+                                        <i class="fa fa-star stars-icon"></i>
                                     </div>
                                     <div class="cloud__review">С другой стороны консультация с широким активом в
                                         значительной степени обуславливает создание направлений прогрессивного развития.
@@ -149,11 +153,11 @@
                             <div class="feedback-block">
                                 <div class="cloud">
                                     <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
+                                        <i class="fa fa-star stars-icon"></i>
+                                        <i class="fa fa-star stars-icon"></i>
+                                        <i class="fa fa-star stars-icon"></i>
+                                        <i class="fa fa-star stars-icon"></i>
+                                        <i class="fa fa-star stars-icon"></i>
                                     </div>
                                     <div class="cloud__review">С другой стороны консультация с широким активом в
                                         значительной степени обуславливает создание направлений прогрессивного развития.
@@ -172,11 +176,11 @@
                             <div class="feedback-block">
                                 <div class="cloud">
                                     <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
+                                        <i class="fa fa-star stars-icon"></i>
+                                        <i class="fa fa-star stars-icon"></i>
+                                        <i class="fa fa-star stars-icon"></i>
+                                        <i class="fa fa-star stars-icon"></i>
+                                        <i class="fa fa-star stars-icon"></i>
                                     </div>
                                     <div class="cloud__review">С другой стороны консультация с широким активом в
                                         значительной степени обуславливает создание направлений прогрессивного развития.
@@ -198,24 +202,26 @@
                 </div>
                 <!-- /.container -->
             </section>
-            <!-- /.feedback -->
+        </main>
+        <!-- /.feedback -->
         <section class="consult">
-            <div class="container">
-                <div class="consult-info">
-                    <div class="consult-text">
-                        <h1 class="consult__title">Получите бесплатную консультацию!</h1>
-                        <span class="consult__subtitle">Отправьте заявку и наши сотрудники свяжутся с вами прямо сейчас</span>
+                <div class="container">
+                    <div class="consult-info">
+                        <div class="consult-text">
+                            <h2 class="consult__title">Получите бесплатную консультацию!</h2>
+                            <span class="consult__subtitle">Отправьте заявку и наши сотрудники свяжутся с вами прямо сейчас</span>
+                        </div>
+                        <!-- /.consult-text -->
+                        <div class="consult-buttons">
+                            <button class="button consult__calling modal-window">Заказать звонок</button>
+                            <button class="button consult__appointment modal-window">Записаться на приём</button>
+                        </div>
+                        <!-- /.consult-buttons -->
                     </div>
-                    <!-- /.consult-text -->
-                    <div class="consult-buttons">
-                        <button class="button consult__calling">Заказать звонок</button>
-                        <button class="button consult__appointment">Записаться на приём</button>
-                    </div>
-                    <!-- /.consult-buttons -->
                 </div>
-            </div>
-            <!-- /.container -->
-        </section>
+                <!-- /.container -->
+            </section>
+            <!-- /. consult -->
             <footer class="footer">
                 <div class="container">
                     <div class="footer-wrap">
@@ -235,13 +241,13 @@
                                 </div>
                                 <!-- /.footer-brand__description -->
                                 <div class="footer-brand__social">
-                                    <a href="vk.com" class="footer-brand-social__icon">
+                                    <a href="https://vk.com/glo_academy" class="footer-brand-social__icon">
                                         <i class="fa fa-vk"></i>
                                     </a>
-                                    <a href="facebook.com" class="footer-brand-social__icon">
+                                    <a href="https://www.facebook.com/gloacademy1/" class="footer-brand-social__icon">
                                         <i class="fa fa-facebook"></i>
                                     </a>
-                                    <a href="instagram.com" class="footer-brand-social__icon">
+                                    <a href="https://www.instagram.com/glo_web_academy/" class="footer-brand-social__icon">
                                         <i class="fa fa-instagram"></i>
                                     </a>
                                 </div>
@@ -258,7 +264,7 @@
                                         <a href="#" class="footer-menu__link">Анонсы</a>
                                     </li>
                                     <li class="footer-menu__item">
-                                        <a href="#" class="footer-menu__link">Контакты</a>
+                                        <a class="footer-menu__link modal-window">Контакты</a>
                                     </li>
                                 </ul>
                             </div>
@@ -299,7 +305,7 @@
                         <!-- /.footer-col-wrap -->
                     </div>
                     <!-- /.footer-wrap -->
-
+    
                 </div>
                 <!-- /.container -->
             </footer>
@@ -310,7 +316,54 @@
                     <a href="http://vk.com/glo-academy" class="footer-copyright__link">Glo Academy</a>
                 </div>
             </div>
+            <div class="modal">
+                <div class="modal-contact">
+                    <button class="modal-contact__close" id="modal-close">&times;</button>
+                    <div class="modal-block">
+                        <h2 class="modal-contact__title">Закажите обратный звонок!</h2>
+                        <form
+                            action="mail.php"
+                            class="modal-contact__form"
+                            id="modal-form"
+                            method="POST">
+                            <div class="input-wrap">
+                                <input
+                                    type="text"
+                                    class="input modal-contact__input"
+                                    name="username"
+                                    placeholder="Ваше имя">
+                            </div>
+                            <div class="input-wrap">
+                                <input
+                                    type="tel"
+                                    class="input modal-contact__input phone"
+                                    name="userphone"
+                                    placeholder="Ваш номер">
+                            </div>
+                            <div class="input-wrap">
+                                <input
+                                    type="text"
+                                    class="input modal-contact__input"
+                                    name="useremail"
+                                    placeholder="Ваш email">
+                            </div>
+                            <button type="submit" class="modal-contact__button" onclick="ym(55091422, 'reachGoal', 'callPlease'); return true;">Перезвоните мне</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- /.modal-contact -->
+            </div>
+            <!-- /.modal -->
+            <div class="modal-thank" id="overlay-thank">
+                <div class="overlay-thank">
+                    <button class="overlay-thank__close" id="close-thank">&times;</button>
+                    <h2 class="overlay-thank__title">Спасибо за заявку, скоро мы вам перезвоним.</h2>
+                </div>
+            </div>
+            <script src="https://kit.fontawesome.com/58e43b8dd8.js%22%3E"></script>
             <script src="js/jquery-3.4.1.js"></script>
+            <script src="js/jquery.validate.min.js"></script>
+            <script src="js/jquery.maskedinput.min.js"></script>
             <script src="js/main.js"></script>
         </body>
     </html>

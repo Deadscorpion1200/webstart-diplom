@@ -1,0 +1,78 @@
+@media (min-width: 992px)
+    .navigation__item-link
+        position: relative
+        cursor: pointer
+        &:hover
+            color: $main-color
+            &:after
+                content: ''
+                position: absolute
+                background-color: #c3759e
+                display: block
+                height: 2px
+                width: 50%
+                left: 25%
+                margin-top: 12px
+    .header__phone
+        position: relative
+        cursor: pointer
+        &:hover
+            background: $footer-color
+
+    .main-text__button
+        &:hover
+            background: $main-color
+            color: #fff
+    .advantage-item__more
+        &:hover
+            color: $footer-color
+            &:after
+                height: 0
+    .consult__calling
+        cursor: pointer
+        &:hover
+            background: lighten($main-color, 5%)
+    .consult__appointment
+        cursor: pointer
+        &:hover
+            background: lighten($footer-color, 5%)
+    .footer-menu__link
+        position: relative
+        cursor: pointer
+        &:hover
+            &:after
+                content: ''
+                position: absolute
+                height: 2px
+                width: 100%
+                background-color: #fff
+                left: 0
+                margin-top: 20px
+    .footer-copyright__link
+        position: relative
+        &:hover
+            &:after
+                content: ''
+                position: absolute
+                height: 2px
+                width: 100%
+                background-color: #fff
+                left: 0
+                margin-top: 20px
+    .anouncement-socials__link
+        &:hover
+            color: $main-color
+    .anouncement__nav-link
+        &:hover
+            color: $main-color
+    .modal-contact__input
+        &:focus
+            border-color: $footer-color
+    .modal-contact__button
+        cursor: pointer
+        &:hover
+            background: $footer-color
+    .modal-contact__close
+        cursor: pointer
+    .overlay-thank__close
+        cursor: pointer
